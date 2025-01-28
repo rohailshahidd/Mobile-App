@@ -14,7 +14,7 @@ const TestH = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://192.168.8.100:3000/Workshops");
+        const response = await fetch("http://ip:port/Workshops");
         const data = await response.json();
         setWorkshops(data);
       } catch (error) {
