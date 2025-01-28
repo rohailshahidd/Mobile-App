@@ -26,7 +26,7 @@ const Profile = ({ route }) => {
           type: result.type ?? 'application/octet-stream',
         });
   
-        const response = await fetch('http://192.168.8.100:3000/upload', {
+        const response = await fetch('http://ip:port/upload', {
           method: 'POST',
           body: formData,
           // Do not set 'Content-Type': 'multipart/form-data' manually
