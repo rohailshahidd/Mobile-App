@@ -77,7 +77,7 @@ const AddFuelDetails1 = ({ route }) => {
     };
 
     try {
-      const response = await fetch('http://192.168.8.100:3000/fuels', {
+      const response = await fetch('http://ip:port/fuels', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(fuelData)
