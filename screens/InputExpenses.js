@@ -75,7 +75,7 @@ const InputExpenses = ({ route }) => {
     };
 
     try {
-      const response = await fetch('http://192.168.8.100:3000/expenses', {
+      const response = await fetch('http://ip:port/expenses', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(expenseData)
