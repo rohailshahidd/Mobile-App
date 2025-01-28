@@ -11,7 +11,7 @@ const ForgotPassword = () => {
   const navigation = useNavigation();
   const emailRef = useRef();
 
-  const SERVER_URL = 'http://192.168.8.100:3000/';
+  const SERVER_URL = 'http://ip:port/';
   const RESET_PASSWORD_URL = `${SERVER_URL}forgot-password`;
 
   const isValidEmail = (email) => {
