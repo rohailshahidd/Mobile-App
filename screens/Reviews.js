@@ -15,7 +15,7 @@ console.log(W_id)
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const response = await fetch(`http://192.168.8.100:3000/Reviews/${W_id}`);
+        const response = await fetch(`http://ip:port/Reviews/${W_id}`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
