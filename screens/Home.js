@@ -32,7 +32,7 @@ const Home = ({ route }) => {
     // Function to fetch fuel data
     const fetchFuelData = async () => {
       try {
-        const response = await fetch(`http://192.168.8.100:3000/fuels1/${userId}`);
+        const response = await fetch(`http://ip:port/fuels1/${userId}`);
         const data = await response.json();
         setFuelData(data);
       } catch (error) {
@@ -43,7 +43,7 @@ const Home = ({ route }) => {
     // Function to fetch maintenance data
     const fetchMaintenanceData = async () => {
       try {
-        const response = await fetch(`http://192.168.8.100:3000/maintenance1/${userId}`);
+        const response = await fetch(`http://ip:port/maintenance1/${userId}`);
         const data = await response.json();
         setMaintenanceData(data);
       } catch (error) {
@@ -54,7 +54,7 @@ const Home = ({ route }) => {
     // Function to fetch expenses data
     const fetchExpensesData = async () => {
       try {
-        const response = await fetch(`http://192.168.8.100:3000/expenses1/${userId}`);
+        const response = await fetch(`http://ip:port/expenses1/${userId}`);
         const data = await response.json();
         setExpensesData(data);
       } catch (error) {
@@ -65,7 +65,7 @@ const Home = ({ route }) => {
     // Function to fetch services data
     const fetchServicesData = async () => {
       try {
-        const response = await fetch(`http://192.168.8.100:3000/services1/${userId}`);
+        const response = await fetch(`http://ip:port/services1/${userId}`);
         const data = await response.json();
         setServicesData(data);
       } catch (error) {
