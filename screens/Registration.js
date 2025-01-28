@@ -15,7 +15,7 @@ const Registration = () => {
   const passwordRef = useRef();
   const confirmPasswordRef = useRef();
 
-  const SERVER_URL = 'http://192.168.8.100:3000/';
+  const SERVER_URL = 'http://ip:port/';
   const SAVE_USER_URL = `${SERVER_URL}/register`;
 
   const isValidEmail = (email) => {
@@ -75,7 +75,7 @@ const Registration = () => {
     };
 
     try {
-      const response =  await fetch('http://192.168.8.100:3000/register', {
+      const response =  await fetch('http://ip:port/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(userdata)
