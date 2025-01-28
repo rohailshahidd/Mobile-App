@@ -18,7 +18,7 @@ const Frame = ({ route }) => {
 
   const fetchServiceData = async () => {
       try {
-        const response = await axios.get(`http://192.168.8.100:3000/api/get-entry?userId=${userId}`);
+        const response = await axios.get(`http://ip:port/api/get-entry?userId=${userId}`);
         setServiceData(response.data);
         console.log(response.data);
       } catch (error) {
