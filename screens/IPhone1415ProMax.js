@@ -23,7 +23,7 @@ const FrameScreen = () => {
 const IPhone1415ProMax = ({ route }) => {
   const { userId } = route.params;
   console.log(userId);
-  const SERVER_URL = 'http://192.168.8.100:3000';
+  const SERVER_URL = 'http://ip:port';
   const SAVE_MAINTENANCE_URL = `${SERVER_URL}/api/save-maintenance`;
   const Stack = createStackNavigator();
   const navigation = useNavigation();
