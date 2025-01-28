@@ -17,7 +17,7 @@ const Frame = ({ route }) => {
 
   const fetchMaintenanceData = async () => {
     try {
-      const response = await axios.get(`http://192.168.8.100:3000/api/get-maintenance?userId=${userId}`);
+      const response = await axios.get(`http://ip:port/api/get-maintenance?userId=${userId}`);
       setMaintenanceData(response.data);
       console.log(response.data);
     } catch (error) {
