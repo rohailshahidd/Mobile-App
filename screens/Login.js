@@ -12,7 +12,7 @@ const Login = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
 
-  const SERVER_URL = 'http://192.168.8.100:3000/';
+  const SERVER_URL = 'http://ip:port/';
   const LOGIN_URL = `${SERVER_URL}login`;
 
   const isValidEmail = (email) => {
