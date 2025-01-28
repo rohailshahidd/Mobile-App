@@ -36,7 +36,7 @@ const Notifications = ({route}) => {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await fetch(`http://192.168.8.100:3000/maintains/${userId}`);
+          const response = await fetch(`http://ip:port/maintains/${userId}`);
           if (!response.ok) {
             throw new Error('Failed to fetch data');
           }
