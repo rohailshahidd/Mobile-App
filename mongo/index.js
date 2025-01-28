@@ -10,7 +10,7 @@ const multer = require('multer');
 const path = require('path');
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://rohail:rohail99@cluster0.bysupev.mongodb.net/carcareapp');
+mongoose.connect('mongodb+srv://mongolink');
 
 // Define a schema for the Maintenance data
 const MaintenanceSchema = new mongoose.Schema({
