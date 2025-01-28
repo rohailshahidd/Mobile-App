@@ -46,7 +46,7 @@ const IPhone1415ProMax1 = ({ route }) => {
     }
     
     
-  const SERVER_URL = 'http://192.168.8.100:3000';
+  const SERVER_URL = 'http://ip:port';
   const SAVE_MAINTENANCE_URL = `${SERVER_URL}/api/service_entry`;
   const navigation = useNavigation();
   const [dropdownValue, setDropdownValue] = useState();
